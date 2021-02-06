@@ -20,7 +20,8 @@ header h1 {
 }
 
 main {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -28,12 +29,13 @@ main aside{
     width: 20%;
     height: 100%;
     background-color: royalblue;
-    display: inline-block;
+    flex: 1;
 }
 
-main div{
+main section{
     width: 80%;
     display: inline-block;
+    flex: 2;
 }
 
 
