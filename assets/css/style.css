@@ -1,15 +1,29 @@
 
 
+
+
+
+
+/*TODO Fix Colors*/
+
+
+/*TODO Fix font formatting */
+
+
+/* Plenty of placeholders left in doc to make editting easier. */
+
 body {
  background: springgreen;
 }
+
+/* Heading */
 
 header {
     padding: 0 30px 0 30px;
     width: 100%;
     background-color: #BBB;
 }
-
+/* push to far sides of header, force content to vertical center */
 .heading {
     display: flex;
     align-items: center;
@@ -21,8 +35,6 @@ header {
 }
 
 .nav-list {
-    display: flex;
-    flex-direction: column;
     margin: 10px 0;
 }
 
@@ -31,19 +43,26 @@ header {
     font-size: 2rem;
     line-height: 2.5rem;
 }
-
+/* link formatting is bad */
+/*TODO FIX ACCESSIBILITY, ACTIVE */
 .nav-list li a{
     color: inherit;
     text-decoration: none;
 }
 
+
+
+
+
+
+/* flex columns for dividing about and work sections */
 main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: stretch;
 }
-
+/* flex rows for label div and main div separation */
 main section {
     flex: 0 0 100px;
     display: flex;
@@ -51,7 +70,7 @@ main section {
     flex-wrap: nowrap;
     background-color: khaki;
 }
-
+/* label formatting */
 .label {
     align-items: right;
     text-align: right;
@@ -66,28 +85,36 @@ main section {
     margin-right: 10px;
 }
 
-
+/* padding to match label margins */
 .about-me {
     background-color: lightgray;
     padding: 20px;
     font-size: 1.5rem;
 }
 
+
+
+/* Card View section */
+/* Uses Flexbox to automatically size items */
 .cards {
     flex: 1 1 300px;
     background-color: lightblue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 15px;
 }
 
 .cards .card {
-    height: 300px;
+    height: 450px;
     background-color: lightcoral;
-    flex: 1 1 300px;
-    margin: 30px;
+    flex: 1 0 30%;
+    min-width: 350px;
+    margin: 15px;
 }
 
+
+/*TODO push all this into work label section*/
 .contact-container {
     flex: 1 1 300px;
     display: flex;
@@ -120,6 +147,7 @@ main section {
 /* 
     KEEP THIS LAST
 */
+/* Currently usused */
 .clearfix::after {
     content: "";
     clear: both;
