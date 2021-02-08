@@ -39,44 +39,81 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: stretch;
 }
 
-.labels {
-    flex: 0 0 300px;
-    min-height: 200px;
+main section {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     background-color: khaki;
 }
 
-.labels div {
+.label {
     align-items: right;
     text-align: right;
     margin: 20px 10px;
     border-right: 2px solid #333;
+    min-width: 80px;
+    flex: 0 0 200px;
 }
 
-.labels div h2 {
+.label h2 {
     font-size: 3rem;
     margin-right: 10px;
 }
 
-.labels div:nth-child(1) {
-    height: 150px;
+
+.about-me {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 1.5rem;
 }
 
-.labels div:nth-child(2) {
-    height: 300px;
-}
-
-.labels div:nth-child(3) {
-    height: 150px;
-}
-
-.content {
-    flex: 1 1 400px;
+.cards {
+    flex: 1 1 300px;
     background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    height: 300px;
+    background-color: lightcoral;
+    flex: 1 1 300px;
+    margin: 30px;
+}
+
+.contact-container {
+    flex: 1 1 300px;
+    display: flex;
+    background-color: lightsalmon;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.contact-list {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.contact-list>li {
+    flex: 1 1 30px;
+}
+
+.contact-list li a {
+    color: inherit;
+    text-decoration: inherit;
+    display: block;
+    padding: 4px 16px;
 }
 
 
