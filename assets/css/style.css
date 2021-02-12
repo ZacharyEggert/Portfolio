@@ -77,7 +77,7 @@ main section {
     margin: 20px 10px;
     border-right: 2px solid #333;
     min-width: 80px;
-    flex: 0 0 200px;
+    flex: 0 0 350px;
 }
 
 .label h2 {
@@ -111,6 +111,14 @@ main section {
     flex: 1 0 30%;
     min-width: 350px;
     margin: 15px;
+    background-image: url("../images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.cards .card:first-child {
+    flex: 1 1 90%;
 }
 
 
