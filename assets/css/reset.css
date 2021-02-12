@@ -9,6 +9,13 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {

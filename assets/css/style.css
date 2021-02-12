@@ -1,10 +1,13 @@
 
-
-
-
-
-
-/*TODO Fix Colors*/
+:root {
+    --colorBackground: #FFF;
+    --colorHeader: #AAA;
+    --colorSidebar: #CCC;
+    --colorText: #000;
+    --colorCardBackground: #CCC;
+    --colorCardTitleBackground: #EEE;
+    --colorCardTitleBorder: #77F;
+}
 
 
 /*TODO Fix font formatting */
@@ -13,7 +16,7 @@
 /* Plenty of placeholders left in doc to make editting easier. */
 
 body {
- background: springgreen;
+ background: var(--colorBackground);
 }
 
 /* Heading */
@@ -21,7 +24,7 @@ body {
 header {
     padding: 0 30px 0 30px;
     width: 100%;
-    background-color: #BBB;
+    background-color: var(--colorHeader);
 }
 /* push to far sides of header, force content to vertical center */
 .heading {
@@ -68,7 +71,7 @@ main section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: khaki;
+    background-color: var(--colorSidebar);
 }
 /* label formatting */
 .label {
@@ -87,10 +90,12 @@ main section {
 
 /* padding to match label margins */
 .about-me {
-    background-color: lightgray;
-    padding: 20px;
+    background-color: var(--colorBackground);
+    padding: 2rem;
     font-size: 1.5rem;
 }
+
+
 
 
 
@@ -98,7 +103,7 @@ main section {
 /* Uses Flexbox to automatically size items */
 .cards {
     flex: 1 1 300px;
-    background-color: lightblue;
+    background-color: var(--colorBackground);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -107,7 +112,7 @@ main section {
 
 .cards .card {
     height: 450px;
-    background-color: lightcoral;
+    background-color: var(--colorCardBackground);
     flex: 1 0 30%;
     min-width: 350px;
     margin: 15px;
@@ -121,12 +126,60 @@ main section {
     flex: 1 1 90%;
 }
 
+/* Card Content*/
+
+.cards .card .spacer {
+    height: 150px;
+    width: 100%;
+    background: none;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.spacer h3 {
+    position: relative;
+    bottom: -7.5rem;
+    border: var(--colorCardTitleBorder) 3px solid;
+    border-radius: 5px;
+    padding-top: .2rem;
+    background-color: var(--colorCardTitleBackground);
+    font-size: 3rem;
+    width: 400px;
+    height: 4rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards .card .card-body {
+    background-color: var(--colorCardBackground);
+    height: 300px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card-body p {
+    text-align: left;
+    flex: 0 0 80%;
+    font-size: 1.5rem;
+}
+
+
 
 /*TODO push all this into work label section*/
 .contact-container {
     flex: 1 1 300px;
     display: flex;
-    background-color: lightsalmon;
+    background-color: var(--colorBackground);
     align-items: center;
     padding: 30px;
 
