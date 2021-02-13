@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+
+:root {
+    --colorBackground: #FFF;
+    --colorHeader: #AAA;
+    --colorSidebar: #CCC;
+    --colorText: #000;
+    --colorCardBackground: #191919;
+    --colorCardTitleBackground:#191919;
+    --colorCardTitleBorder: #F62211;
+}
+
+body{
+    font-family: 'Six Caps', sans-serif;
+    background-image: url(../img/FIOE.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: auto 100vh;
+    color: #FFF;
+}
+
+
+
+
+main.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.home div {
+    flex: 0 1 180px;
+
+}
+
+.home .layercake {
+    flex: 0 1 200px;
+}
+
+
+
+.home .layercake h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+
+.lower-right {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    font-size: 3rem;
+    color: #FFF;
+    font-weight: normal;
+}
+
+img.selfie {
+    flex:0 1 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+
+
+
+main.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:10% 10% 0 10%;
+}
+
+.cards .card {
+    height: 450px;
+    flex: 1 0 30%;
+    min-width: 350px;
+    margin: 15px;
+    background-image: url("../img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: none;
+    border-radius: 1rem;
+}
+
+.cards .card:first-child {
+    flex: 1 1 90%;
+}
+
+/* Card Content*/
+
+.cards .card .spacer {
+    height: 150px;
+    width: 100%;
+    background: none;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cards .card .spacer h3 {
+    position: relative;
+    bottom: -7.5rem;
+    border: var(--colorCardTitleBorder) 3px solid;
+    border-radius: 5px;
+    padding-top: .2rem;
+    background-color: var(--colorCardTitleBackground);
+    font-size: 3rem;
+    width: 400px;
+    height: 4rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards .card .card-body {
+    background-color: var(--colorCardBackground);
+    height: 300px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+}
+
+.cards .card .card-body p {
+    text-align: left;
+    flex: 0 0 80%;
+    font-size: 1.5rem;
+}
+
+
+
+
+.contact {
+    width: 80vw;
+    margin: 0 10vw;
+}
+
+.contact h1 {
+    float:right;
+    margin: 4vh 5vw 0 0;
+    font-size: 6rem;
+}
