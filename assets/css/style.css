@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
-
 
 :root {
     --colorBackground: #FFF;
@@ -75,14 +73,14 @@ main.cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin:10% 10% 0 10%;
+    margin:0 10% 0 10%;
 }
 
 .cards .card {
     height: 450px;
     flex: 1 0 30%;
     min-width: 350px;
-    margin: 15px;
+    margin: 45px;
     background-image: url("../img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -91,7 +89,7 @@ main.cards {
 }
 
 .cards .card:first-child {
-    flex: 1 1 90%;
+    flex: 1 1 85%;
 }
 
 /* Card Content*/
@@ -148,11 +146,87 @@ main.cards {
 
 .contact {
     width: 80vw;
-    margin: 0 10vw;
+    margin: 0 20vw;
 }
 
 .contact h1 {
     float:right;
     margin: 4vh 5vw 0 0;
     font-size: 6rem;
+}
+
+main.contact {
+    margin: 40vh 0 0 5vw;
+
+    float: left;
+    font-size: 3rem;
+    line-height: 4rem;
+    
+}
+
+.top-left {
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    font-size: 3rem;
+}
+
+
+
+
+.work {
+    text-align: right;
+    width: 80vw;
+    margin: 0 20vw 0 15vw;
+}
+
+.work h1 {
+
+    margin: 4vh 0vw 0 0;
+    font-size: 6rem;
+}
+
+
+
+header.about {
+    width: 80vw;
+    margin: 0 20vw;
+}
+
+header.about h1 {
+    float:right;
+    margin: 4vh 5vw 0 0;
+    font-size: 6rem;
+}
+
+main.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 60vh;
+    width: 100vw;
+    font-size: 2rem;
+}
+
+.about section:first-child {
+    flex: 0 0 300px;
+    margin-left: 10vw;
+    
+}
+
+.about div {
+    flex: 0 1 400px;
+
+}
+
+.about section img {
+    margin-right: 10vw;
+    width: 300px;
+    border-radius: 150px;
+}
+.smaller-text {
+    font-size: 1rem;
+    font-family: 'Quicksand';
 }
