@@ -5,6 +5,7 @@
     --colorSidebar: #CCC;
     --colorText: #000;
     --colorCardBackground: #191919;
+    --colorCardBackgroundHover: #212121;
     --colorCardTitleBackground:#191919;
     --colorCardTitleBorder: #F62211;
 }
@@ -86,6 +87,12 @@ main.cards {
     background-repeat: no-repeat;
     background-color: none;
     border-radius: 1rem;
+    animation-timing-function: linear;
+    animation-duration: 25ms;
+}
+
+.cards .card:hover .card-body{
+    background-color: var(--colorCardBackgroundHover);
 }
 
 .cards .card:first-child {
