@@ -10,6 +10,7 @@
     --colorCardTitleBorder: #F62211;
 }
 
+
 body{
     font-family: 'Six Caps', sans-serif;
     background-image: url(../img/FIOE.png);
@@ -37,11 +38,13 @@ main.home {
 
 .home div {
     flex: 0 1 180px;
+    animation: linear 100ms;
 
 }
 
 .home .layercake {
     flex: 0 1 200px;
+    animation: linear 100ms;
 }
 
 
@@ -49,22 +52,25 @@ main.home {
 .home .layercake h2 {
     font-size: 3rem;
     font-weight: normal;
+    animation: linear 100ms;
 }
 
 
-.lower-right {
+.lower-left {
     position: fixed;
     left: 30px;
     bottom: 30px;
     font-size: 3rem;
     color: #FFF;
     font-weight: normal;
+    animation: linear 100ms;
 }
 
 img.selfie {
     flex:0 1 200px;
     width: 200px;
-    border-radius: 100px;
+    border-radius: 50%;
+    animation: linear 100ms;
 }
 
 
@@ -80,7 +86,7 @@ main.cards {
 .cards .card {
     height: 450px;
     flex: 1 0 30%;
-    min-width: 350px;
+    min-width: 250px;
     margin: 45px;
     background-image: url("../img/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
     background-size: 100%;
@@ -119,7 +125,7 @@ main.cards {
     padding-top: .2rem;
     background-color: var(--colorCardTitleBackground);
     font-size: 3rem;
-    width: 400px;
+    width: 100%;
     height: 4rem;
     display: flex;
     align-content: center;
@@ -236,4 +242,131 @@ main.about {
 .smaller-text {
     font-size: 1rem;
     font-family: 'Quicksand';
+}
+
+
+@media screen and (max-width: 840px) {
+
+    main.home {
+        display: flex;
+    }
+
+    .home div {
+        flex: 120px;
+    }
+
+    .home .layercake{
+        flex: 1 1 150px;
+        margin-left: 10vw;
+    }
+
+    img.selfie {
+        flex: 150px;
+        width:150px;
+        margin-right: 10vw;
+    }
+
+
+    .about section img {
+        width:190px;
+        margin-right: 8vw;
+    }
+
+    .about section:first-child {
+        flex: 0 0 220px;
+        margin-left: 8vw;
+    }
+
+
+
+    main.cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:0 4vw 0 4vw;
+    }
+
+    .cards .card .spacer h3 {
+        font-size: 2.25rem;
+    }
+    
+    main.contact {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .home div {
+        flex: 0px;
+    }
+
+    .lower-left {
+        font-size: 2rem;
+    }
+
+    .top-left {
+        font-size: 2rem;
+    }
+
+    .home .layercake h2{
+        font-size: 2rem;
+    }
+
+    img.selfie {
+        flex: 120px;
+        width:120px;
+        margin-right: 10vw;
+    }
+
+    .about section img {
+        width:130px;
+        margin-right: 6vw;
+    }
+
+    .about section:first-child {
+        flex: 0 0 130px;
+        margin-left: 6vw;
+        font-size: 1.5rem;
+        width: 130px;
+    }
+
+
+
+    main.cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    cards .card {
+        min-width: 250px;
+    }
+
+    .cards .card .spacer h3 {
+        font-size: 1.5rem;
+    }
+
+    .cards .card .card-body p {
+        font-size: 1rem;
+    }
+
+    header.about h1,
+    header.work h1,
+    header.contact h1 {
+        font-size: 4rem;
+    }
+
+
+
+    main.contact {
+        margin-top: 50vh;
+        font-size: 2rem;
+        line-height: 2.75rem;
+    }
 }
