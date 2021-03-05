@@ -244,6 +244,18 @@ main.about {
     font-family: 'Quicksand';
 }
 
+.card.t-tracker {
+    background-image: url("../img/t-tracker-screenshot.png");
+}
+.card.planner {
+    background-image: url("../img/planner-screenshot.png");
+}
+.card.p-generator {
+    background-image: url("../img/p-generator-screenshot.png");
+}
+
+
+
 
 @media screen and (max-width: 840px) {
 
