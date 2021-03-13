@@ -253,7 +253,9 @@ main.about {
 .card.p-generator {
     background-image: url("../img/p-generator-screenshot.png");
 }
-
+.card.egg {
+    background-image: url("../img/egg-screenshot.png");
+}
 
 
 
