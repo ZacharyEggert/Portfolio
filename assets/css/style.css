@@ -256,7 +256,9 @@ main.about {
 .card.egg {
     background-image: url("../img/egg-screenshot.png");
 }
-
+.card.ua-q {
+    background-image: url("../img/uq-screenshot.png");
+}
 
 
 @media screen and (max-width: 840px) {
