@@ -1,6 +1,13 @@
 const sidebarCloseButtonId = "hide-sidebar";
 const sidebarOpenButtonId = "show-sidebar";
 const sidebarId = "mobile-sidebar";
+const aboutSectionId = "about";
+const worksSectionId = "works";
+const contactSectionId = "contact";
+
+const aboutClass = "about-link";
+const worksClass = "works-link";
+const contactClass = "contact-link";
 
 
 
@@ -23,3 +30,11 @@ showSidebarBtn.addEventListener("click", function(){
     sidebar.style = "left: -100%; opacity: 0%";
     
 });
+
+
+
+/** NAV LINKING */
+
+const aboutBtn = document.getElementsByClassName(aboutClass);
+const aboutBtn = document.getElementsByClassName(aboutClass);
+const aboutBtn = document.getElementsByClassName(aboutClass);
